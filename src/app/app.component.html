@@ -1,0 +1,10 @@
+<div class="container">
+  <infinite-scroll (scrolled)="onScroll()" style="height: 600px; overflow-y: auto;">
+    <post *ngFor="let post of posts | async" [post]="post"></post>
+    <div *ngIf="isLoading" style="margin-top: 10px">
+      <h3>
+        Loading...
+      </h3>
+    </div>
+  </infinite-scroll>
+</div>

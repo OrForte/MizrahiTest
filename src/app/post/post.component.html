@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="header">
+        {{post.username}}
+    </div>
+    <div class="container">
+        <p>{{post.publishDate | date : 'short'}}</p>
+        <p>{{post.likesCount}}</p>
+        <p> {{post.textContent}}</p>
+    </div>
